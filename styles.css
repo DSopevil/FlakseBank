@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -218,4 +219,226 @@ body {
     background-color: #ff8811;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page.hidden {
+    display: none;
+}
+
+/* Landing Page Styles */
+#landing {
+    background: linear-gradient(135deg, #f5e6d3 0%, #f9f3e6 100%);
+}
+
+.landing-container {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.landing-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.enter-button {
+    background-color: #FF9933;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enter-button:hover {
+    background-color: #ff8811;
+    transform: scale(1.05);
+}
+
+/* Main Page Styles */
+#main {
+    background: linear-gradient(135deg, #f5e6d3 0%, #f9f3e6 100%);
+    padding: 40px 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 48px;
+    color: #FF9933;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.main-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.squares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.square {
+    background-color: #FF9933;
+    border: 3px solid #d97a23;
+    border-radius: 30px;
+    padding: 50px 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.square h2 {
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.square:hover {
+    background-color: #ff8811;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.square:active {
+    transform: translateY(-4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    .main-subtitle {
+        font-size: 16px;
+    }
+
+    .squares-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .square {
+        min-height: 150px;
+    }
+
+    .square h2 {
+        font-size: 18px;
+    }
+}
+
+/* Content Pages Styles */
+.page-content {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5e6d3 0%, #f9f3e6 100%);
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: inline-block;
+    color: #FF9933;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #ff8811;
+}
+
+.page-title {
+    color: #FF9933;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+.pdf-link {
+    display: block;
+    background-color: #FF9933;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pdf-link:hover {
+    background-color: #ff8811;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+>>>>>>> f3f20eb (Add PDF download buttons and update pages)
 }
