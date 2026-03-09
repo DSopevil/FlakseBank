@@ -1,4 +1,142 @@
 <!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forankring i læreplanen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .plan-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            background: none;
+        }
+        .plan-text {
+            flex: 1;
+            color: #4a2c13;
+            font-size: 18px;
+            font-family: 'Georgia', serif;
+        }
+        .plan-title {
+            text-align: center;
+            font-size: 38px;
+            color: #4a2c13;
+            font-family: 'Georgia', serif;
+            margin-bottom: 30px;
+        }
+        .plan-subtitle {
+            font-size: 28px;
+            color: #4a2c13;
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+        }
+        .plan-popup-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 30px;
+        }
+        .plan-popup-btn {
+            background: #f5e6d3;
+            color: #4a2c13;
+            font-size: 24px;
+            font-family: 'Georgia', serif;
+            border: none;
+            border-radius: 18px;
+            padding: 16px 40px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .plan-popup-btn:hover {
+            background: #e9d6c2;
+        }
+        .plan-popup-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff7ee;
+            color: #4a2c13;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            padding: 32px 40px;
+            z-index: 1000;
+            min-width: 320px;
+            max-width: 90vw;
+        }
+        .plan-popup-close {
+            display: block;
+            margin-top: 24px;
+            background: #f5e6d3;
+            color: #4a2c13;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            padding: 8px 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .plan-container {
+                flex-direction: column;
+                align-items: stretch;
+                margin: 30px 10px 0 10px;
+            }
+            .plan-popup-list {
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <script>
+        function showPopup(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</head>
+<body style="background: #fff7ee;">
+    <div class="plan-title">Forankring i læreplanen</div>
+    <div class="plan-container">
+        <div class="plan-text">
+            <div class="plan-subtitle">Overordnet del</div>
+            <p>I overordnet del står det at “For å skape motivasjon og læringsglede i undervisningen trengs et bredt repertoar av læringsaktiviteter og -ressurser innenfor forutsigbare rammer.”. Når du legger til rette for en elevsentrert aktivitet som fasiliteter en erfaring gjennom rollespill, bruker du differensierte tilnærminger som jobber med å gi elevene dette.</p>
+            <p>På denne siden kan du lese mer om den faglige forankringen til opplegget, slik at du kan utfordre din praksis som matematikklærer og supplere mer tradisjonelle undervisningsformer med erfaringsbaserte opplegg.</p>
+        </div>
+        <div class="plan-popup-list">
+            <button class="plan-popup-btn" onclick="showPopup('popup5')">5. trinn</button>
+            <button class="plan-popup-btn" onclick="showPopup('popup6')">6. trinn</button>
+            <button class="plan-popup-btn" onclick="showPopup('popup7')">7. trinn</button>
+        </div>
+    </div>
+    <div id="popup5" class="plan-popup-box">
+        <strong>5. trinn</strong><br><br>
+        <div style="font-size:18px; color:#4a2c13;">
+            utforske og forklare sammenhenger mellom brøker, desimaltall og prosent og bruke det i hoderegning<br><br>
+            lage og løse oppgaver i regneark som omhandler personlig økonomi.
+        </div>
+        <button class="plan-popup-close" onclick="closePopup('popup5')">Lukk</button>
+    </div>
+    <div id="popup6" class="plan-popup-box">
+        <strong>6. trinn</strong><br><br>
+        <em>Her kan du legge inn tekst for popupen til 6. trinn.</em>
+        <button class="plan-popup-close" onclick="closePopup('popup6')">Lukk</button>
+    </div>
+    <div id="popup7" class="plan-popup-box">
+        <strong>7. trinn</strong><br><br>
+        <em>Her kan du legge inn tekst for popupen til 7. trinn.</em>
+        <button class="plan-popup-close" onclick="closePopup('popup7')">Lukk</button>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
