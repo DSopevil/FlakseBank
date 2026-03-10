@@ -1,6 +1,9 @@
-<<<<<<< HEAD
 # Simple HTTP Server in PowerShell
 $port = 8000
+$listener = New-Object System.Net.HttpListener
+$listener.Prefixes.Add("http://localhost:$port/")
+Write-Host "Server running at http://localhost:$port"
+Write-Host "Press Ctrl+C to stop the server"
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://localhost:$port/")
 $listener.Start()
@@ -43,16 +46,6 @@ while ($listener.IsListening) {
 }
 
 $listener.Stop()
-=======
-# Simple HTTP Server in PowerShell
-$port = 8000
-$listener = New-Object System.Net.HttpListener
-$listener.Prefixes.Add("http://localhost:$port/")
-$listener.Start()
-Write-Host "Server running at http://localhost:$port"
-Write-Host "Press Ctrl+C to stop the server"
-
-while ($listener.IsListening) {
     $context = $listener.GetContext()
     $request = $context.Request
     $response = $context.Response
@@ -88,4 +81,3 @@ while ($listener.IsListening) {
 }
 
 $listener.Stop()
->>>>>>> f3f20eb (Add PDF download buttons and update pages)
