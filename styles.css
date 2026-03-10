@@ -1,3 +1,8 @@
+.beige-link {
+    background-color: #f5e6d3 !important;
+    color: #4a2c13 !important;
+    border: none;
+}
 .image-gallery {
     display: flex;
     flex-direction: column;
