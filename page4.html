@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Forankring i læreplanen</title>
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -13,7 +14,7 @@
             align-items: flex-start;
             max-width: 900px;
             margin: 60px auto 0 auto;
-            background: none;
+            background: #f5e6d3;
         }
         .plan-text {
             flex: 1;
@@ -41,7 +42,7 @@
             margin-top: 30px;
         }
         .plan-popup-btn {
-            background: #f5e6d3;
+            background: #fff6eb;
             color: #4a2c13;
             font-size: 24px;
             font-family: 'Georgia', serif;
@@ -61,7 +62,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #fff7ee;
+            background: #fff6eb;
             color: #4a2c13;
             border-radius: 16px;
             box-shadow: 0 4px 24px rgba(0,0,0,0.18);
@@ -73,7 +74,7 @@
         .plan-popup-close {
             display: block;
             margin-top: 24px;
-            background: #f5e6d3;
+            background: #fff6eb;
             color: #4a2c13;
             border: none;
             border-radius: 8px;
@@ -102,58 +103,65 @@
         }
     </script>
 </head>
-<body style="background: #fff7ee;">
-    <div class="plan-title">Forankring i læreplanen</div>
-    <div class="plan-container">
+<body style="background: #fff6eb;">
+    <div class="plan-bg-wrapper" style="background: #f5e6d3; width: 100vw;">
+        <div>
+            <p>.</p>
+            <p> . </p>
+        </div>
+        <div class="plan-title">Forankring i læreplanen</div>
+        <div class="plan-container">
         <div class="plan-text">
             <div class="plan-subtitle">Overordnet del</div>
             <p>I overordnet del står det at “For å skape motivasjon og læringsglede i undervisningen trengs et bredt repertoar av læringsaktiviteter og -ressurser innenfor forutsigbare rammer.”. Når du legger til rette for en elevsentrert aktivitet som fasiliteter en erfaring gjennom rollespill, bruker du differensierte tilnærminger som jobber med å gi elevene dette.</p>
-            <p>På denne siden kan du lese mer om den faglige forankringen til opplegget, slik at du kan utfordre din praksis som matematikklærer og supplere mer tradisjonelle undervisningsformer med erfaringsbaserte opplegg.</p>
+            <p>På denne siden kan du lese mer om den faglige forankringen til opplegget, slik at du kan utfordre din praksis som matematikklærer og supplere mer tradisjonelle undervisningsformer med erfaringsbaserte opplegg. </p>
         </div>
         <div class="plan-popup-list">
-            <button class="plan-popup-btn" onclick="showPopup('popup5')">5. trinn</button>
-            <button class="plan-popup-btn" onclick="showPopup('popup6')">6. trinn</button>
-            <button class="plan-popup-btn" onclick="showPopup('popup7')">7. trinn</button>
+            <button class="plan-popup-btn" onclick="showPopup('popup5')">7. trinn</button>
+            <button class="plan-popup-btn" onclick="showPopup('popup6')">Overordnet del</button>
+            <button class="plan-popup-btn" onclick="showPopup('popup7')">Tverrfaglig tema</button>
         </div>
     </div>
     <div id="popup5" class="plan-popup-box">
-        <strong>5. trinn</strong><br><br>
+        <strong>7. Trinn</strong><br><br>
         <div style="font-size:18px; color:#4a2c13;">
-            utforske og forklare sammenhenger mellom brøker, desimaltall og prosent og bruke det i hoderegning<br><br>
-            lage og løse oppgaver i regneark som omhandler personlig økonomi.
+         <em>Representere og bruke brøk, desimaltall og prosent på ulike måter.</em>
+         <P>.</P>
+         <EM>Utvikle og bruke hensiktsmessige strategier i regning med brøk, desimaltall og prosent og forklare tenkemåtene sine.</EM>
+         <P>.</P>
+         <EM>Utvikle og bruke hensiktsmessige strategier i regning med brøk, desimaltall og prosent og forklare tenkemåtene sine.</EM>
+         <p>.</p>
+         <eM>Utforske negative tall i praktiske situasjoner. </eM>
+        
+        <P>.</P>
+        <em> Elevene viser og utvikler kompetanse i faget på 7. trinn når de utforsker og reflekterer over matematiske sammenhenger, benytter matematiske begreper i kommunikasjonen og bruker ulike representasjoner og problemløsingsstrategier. Elevene viser og utvikler også kompetanse når de bruker kunnskap og ferdigheter til å formulere og løse problemer som er knyttet til praktiske situasjoner i hverdagen og i samfunnet.</em>
         </div>
         <button class="plan-popup-close" onclick="closePopup('popup5')">Lukk</button>
     </div>
     <div id="popup6" class="plan-popup-box">
-        <strong>6. trinn</strong><br><br>
-        <em>Her kan du legge inn tekst for popupen til 6. trinn.</em>
+        <strong>Tverrfaglig tema</strong><br><br>
+        <em>Personlig økonomi er en del av temaet "Folkehelse og livsmestring": Folkehelse og livsmestring som tverrfaglig tema i skolen skal gi elevene kompetanse som fremmer god psykisk og fysisk helse, og som gir muligheter til å ta ansvarlige livsvalg. I barne- og ungdomsårene er utvikling av et positivt selvbilde og en trygg identitet særlig avgjørende.</em>
         <button class="plan-popup-close" onclick="closePopup('popup6')">Lukk</button>
     </div>
     <div id="popup7" class="plan-popup-box">
-        <strong>7. trinn</strong><br><br>
-        <em>Her kan du legge inn tekst for popupen til 7. trinn.</em>
+        <strong>Overordnet del</strong><br><br>
+        <em>Skolen skal støtte og bidra til elevenes sosiale læring og utvikling gjennom arbeid med fagene og i skolehverdagen for øvrig. Elevens identitet og selvbilde, meninger og holdninger blir til i samspill med andre. Sosial læring skjer både i undervisningen og i alle andre aktiviteter i skolens regi. Faglig læring kan ikke isoleres fra sosial læring. I det daglige arbeidet spiller derfor elevenes faglige og sosiale læring og utvikling sammen.</em>
         <button class="plan-popup-close" onclick="closePopup('popup7')">Lukk</button>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Læreplan og Tverrfaglig arbeid - Flakse Bank</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+
+    </div> <!-- plan-bg-wrapper slutt -->
+    <!-- Integrert seksjon fra den andre HTML-delen -->
     <div class="page-content">
         <div class="content-container">
-            <a href="index.html" class="back-button">← Tilbake</a>
-            <h1 class="page-title">Læreplan og Tverrfaglig arbeid</h1>
+            <a href="index.html#main" class="back-button">← Tilbake</a>
+            <h1 class="page-title">Læreplan og ferdigheter</h1>
             <div class="content-section">
-                <p>Innhold for læreplan og tverrfaglig arbeid kommer her.</p>
-                <p>Dette er rollelek for arbeid med personlig økonomi og matematikk.</p>
+                <p>Gjennom rollespillet Velkommen til Flakse Bank får elevene øve på å mestre situasjoner som innebærer økonomiske valg, forståelse av renter og konsekvenser av gjeld. Det er ment som et holdningsbyggende undervisningsopplegg, som kan brukes til å arbeide tematisk i samfunnsfag i etterkant av opplegget. Hvordan påvirker våre økonomiske valg livene våre? Kan vi som lærere fasilitere gode samtaler der elevene får utforske isne egne holdninger, og få verktøyene til å ta gode valg for seg selv i fremtiden? For å ruste elvene til å gjøre dette må de få erfare hva det innebærer.</p>
+                <p>I matematikkfaget er kompetansemålene i læreplanen orientert mot budsjett. Dette betyr ikke at vi ikke kan bruke personlig økonomi som ramme når vi utforsker og underviser i andre temaer. Dette undervisningsopplegget er fundert i temaet prosent, og er utviklet slik at du som lærer kan bruke undervisningsdeisgnet for å innhente en formativ vurdering for å synliggjøre elevenes uformelle strategier for sammensatte regneoppgaver, og å regne ut prosentandel. </p>
+                <p>I forskningsprosjektet viste elevene på 7. trinn en tydelig tendens til å bruke likhetstegnet som operator i sammensatte regneoppgaver, og de bruke flere strategier for å regne prosent. Bruk funnene i din egen klasse som et verktøy for å synliggjøre overgangen til formelle prosedyrer og misoppfatninger i plenum.</p>
+                <p>Opplegget er basert på rullerende samarbeid og muntlig utforskning med læringspartner. Elevene får dermed øve på de grunnleggende ferdighetene «muntlig ferdigheter», «å kunne regne», «å kunne lese». Dersom du også velger å benytte deg av etterarbeidet vil de få øve individuelt på å skrive også. </p
             </div>
         </div>
     </div>
 </body>
-</html>
+

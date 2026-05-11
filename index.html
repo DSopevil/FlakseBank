@@ -17,30 +17,40 @@
     <!-- Main Page with Squares -->
     <div id="main" class="page hidden">
         <div class="main-container">
-            <h1 class="main-title">Gjeld & lån</h1>
-            <p class="main-subtitle">Rollelek for arbeid med personlig økonomi og matematikk<br>i grunnskolen</p>      
-            <div class="squares-grid">
-                <a href="page1.html" class="square">
-                    <h2>5.-6. trinn</h2>
-                </a>
-                <a href="page2.html" class="square">
-                    <h2>7.-8. trinn</h2>
-                </a>
-                <a href="page3.html" class="square">
-                    <h2>9.-10. trinn</h2>
-                </a>
-                <a href="page4.html" class="square">
-                    <h2>Læreplan og Tverrfaglig arbeid</h2>
-                </a>
-                <a href="page5.html" class="square">
-                    <h2>Personlig Økonomi</h2>
-                </a>
-                <a href="page6.html" class="square">
-                    <h2>The Science</h2>
-                </a>
+            <div class="nav-header">
+                <h1 class="main-title">Gjeld & lån</h1>
+                <p class="main-subtitle">Dette er en ressurs for matematikklærere på 7. trinn. La elevene utforske lån og gjeld gjennom en praktisk erfaring med rollespill som metode, klikk deg rundt for å oppdage mer!</p>
+            </div>
+            <div class="main-flex-row-centered">
+                <div style="display: flex; align-items: center; gap: 32px;">
+                    <img src="woman.png" alt="Illustration" class="nav-illustration-sketch">
+                </div>
+                <div class="squares-grid squares-2x2">
+                    <a href="page1.html" class="square">
+                        <h2>Rollespill for 7. trinn</h2>
+                    </a>
+                    <a href="page4.html" class="square">
+                        <h2>Forankring i læreplanen</h2>
+                    </a>
+                    <a href="page5.html" class="square">
+                        <h2>Forslag til tverrfaglige opplegg</h2>
+                    </a>
+                    <a href="page6.html" class="square">
+                        <h2>Estetiske læringsprosesser i matematikk</h2>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        // Show navigation if #main is in the URL
+        window.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash === '#main') {
+                document.getElementById('landing').classList.add('hidden');
+                document.getElementById('main').classList.remove('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
